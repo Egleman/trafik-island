@@ -1,0 +1,21 @@
+@media (hover: hover) {
+    .header__list-link {
+        &:hover {
+            &::after {
+                opacity: 1;
+                bottom: -8px;
+            }
+        }
+    }
+}
+
+@media (hover: none) {
+    .header__list-link {
+        &:active {
+            &::after {
+                opacity: 1;
+                bottom: -8px;
+            }
+        }
+    }
+}
