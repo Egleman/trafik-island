@@ -27,6 +27,7 @@ body {
     color: #000;
     min-width: 303px;
     font-size: 18px;
+    background: #79BA2A;
 }
 
 ol, ul { 
@@ -38,6 +39,11 @@ label, button {
 }
 b {
     font-weight: 700;
+}
+
+.triangle {
+    height: 1500px;
+    background: #79BA2A;
 }
 
 @import './imports';

@@ -1,9 +1,15 @@
 @import './components/keyframes';
 @import './components/container';
-
+@import './components/title';
 @import './components/anchor';
+@import './components/card';
 
 @import './sections/header'; 
+@import './sections/hero';
+@import './sections/good';
+@import './sections/news';
+@import './sections/gallery';
+@import './sections/history';
 
 @import './components/modal';
 @import './components/buttons';

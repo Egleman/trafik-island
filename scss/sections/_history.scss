@@ -1,0 +1,119 @@
+.history {
+    overflow: hidden;
+    transform: translateY(-135px);
+    z-index: 11;
+    position: relative;
+    padding: 0 0 120px 0;
+    &__container {
+        display: grid;
+        grid-template-columns: minmax(15px, 1fr) minmax(200px, 1360px) minmax(15px, 1fr);
+    }
+    &__buttons {
+        display: none;
+    }
+    &__wrapper {
+        grid-column: 2 / span 2;
+        display: flex;
+        align-items: flex-end;
+        gap: 82px;
+    }
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        padding-bottom: 30px;
+    }
+    &__title {
+        color: #fff;
+    }
+    &__swiper {
+        .swiper-slide {
+            width: max-content !important;
+        }
+    }
+    &__slide {
+        width: 373px;
+    }
+    &__slider {
+        width: calc(100% - 212px - 82px);
+    }
+}
+@media (max-width: 1022px) {
+    .history {
+        padding: 0 0 70px 0;
+        transform: translateY(-100px);
+        &__slide {
+            width: 267px;
+        }
+        &__wrapper {
+            gap: 105px;
+        }
+        &__slider {
+            width: calc(100% - 170px - 105px);
+        }
+        &__info {
+            padding-bottom: 70px;
+        }
+    }
+}
+@media (max-width: 606px) {
+    .history {
+        padding: 100px 0 70px 0;
+        transform: translateY(0);
+        &__wrapper {
+            grid-column: 2 / span 1;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 50px;
+            grid-row: 1 / span 1;
+        }
+        &__info {
+            // padding: 0 15px;
+            gap: 47px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        &__title {
+            br {
+                display: none;
+            }
+        }
+        &__buttons {
+            display: flex;
+        }
+        &__slider {
+            width: 100%;
+            padding-left: 27.5px;
+        }
+        &__swiper {
+            padding-right: 53px;
+        }
+        &__slide {
+            width: 315px;
+        }
+        &__buttons {
+            padding-top: 270px;
+        }
+    }
+}
+@media (max-width: 405px) {
+    .history {
+        &__slide {
+            width: 275px;
+        }
+    }
+}
+@media (max-width: 360px) {
+    .history {
+        &__slide {
+            width: 250px;
+        }
+    }
+}
+@media (max-width: 340px) {
+    .history {
+        &__slide {
+            width: 230px;
+        }
+    }
+}
