@@ -1173,7 +1173,7 @@ b {
   transform: translateY(-135px);
   z-index: 11;
   position: relative;
-  padding: 0 0 120px 0;
+  padding: 0 0 0 0;
 }
 .history__container {
   display: grid;
@@ -1210,7 +1210,7 @@ b {
 
 @media (max-width: 1022px) {
   .history {
-    padding: 0 0 70px 0;
+    padding: 0 0 0 0;
     transform: translateY(-100px);
   }
   .history__slide {
@@ -1276,6 +1276,89 @@ b {
 @media (max-width: 340px) {
   .history__slide {
     width: 230px;
+  }
+}
+.variable {
+  padding: 120px 0 200px 0;
+}
+.variable__title {
+  color: #fff;
+  margin-bottom: 60px;
+}
+.variable__list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.variable__block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 50px 30px 50px 40px;
+  background: #fff;
+  border-radius: 20px;
+}
+.variable__block-text {
+  color: rgb(45, 45, 45);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 3%;
+  text-align: left;
+}
+.variable__block-link {
+  border-radius: 14px;
+  background: rgb(246, 144, 0);
+  color: rgb(255, 255, 255);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 6%;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.3s all;
+  padding: 12px 15px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: -moz-max-content;
+  width: max-content;
+  height: 35px;
+  white-space: nowrap;
+}
+
+@media (max-width: 1022px) {
+  .variable {
+    padding: 70px 0;
+  }
+  .variable__title {
+    margin-bottom: 60px;
+  }
+  .variable__list {
+    gap: 20px;
+  }
+  .variable__block {
+    padding: 40px 20px 40px 30px;
+  }
+  .variable__block-text {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23px;
+  }
+}
+@media (max-width: 606px) {
+  .variable {
+    padding: 70px 0 100px 0;
+  }
+  .variable__block {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  .variable__block-link {
+    margin-left: auto;
   }
 }
 .search {
@@ -1470,6 +1553,10 @@ b {
     background: #fff;
     color: rgb(246, 144, 0);
   }
+  .variable__block-link:hover {
+    background: #fff;
+    color: rgb(246, 144, 0);
+  }
 }
 @media (hover: none) {
   .header__list-link:active::after {
@@ -1494,6 +1581,10 @@ b {
     color: rgb(246, 144, 0);
   }
   .card__button:active {
+    background: #fff;
+    color: rgb(246, 144, 0);
+  }
+  .variable__block-link:active {
     background: #fff;
     color: rgb(246, 144, 0);
   }

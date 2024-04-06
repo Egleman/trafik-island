@@ -3,7 +3,7 @@
     transform: translateY(-135px);
     z-index: 11;
     position: relative;
-    padding: 0 0 120px 0;
+    padding: 0 0 0 0;
     &__container {
         display: grid;
         grid-template-columns: minmax(15px, 1fr) minmax(200px, 1360px) minmax(15px, 1fr);
@@ -40,7 +40,7 @@
 }
 @media (max-width: 1022px) {
     .history {
-        padding: 0 0 70px 0;
+        padding: 0 0 0 0;
         transform: translateY(-100px);
         &__slide {
             width: 267px;

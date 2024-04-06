@@ -38,6 +38,12 @@
             color: rgb(246, 144, 0);
         }
     }
+    .variable__block-link {
+        &:hover {
+            background: #fff;
+            color: rgb(246, 144, 0);
+        }
+    }
 }
 
 @media (hover: none) {
@@ -75,6 +81,12 @@
         }
     }
     .card__button {
+        &:active {
+            background: #fff;
+            color: rgb(246, 144, 0);
+        }
+    }
+    .variable__block-link {
         &:active {
             background: #fff;
             color: rgb(246, 144, 0);
