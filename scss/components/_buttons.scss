@@ -7,6 +7,14 @@
             }
         }
     }
+    .footer__list-link {
+        &:hover {
+            &::after {
+                opacity: 1;
+                bottom: -8px;
+            }
+        }
+    }
     .hero__button_orange {
         &:hover {
             background: #fff;
@@ -48,6 +56,14 @@
 
 @media (hover: none) {
     .header__list-link {
+        &:active {
+            &::after {
+                opacity: 1;
+                bottom: -8px;
+            }
+        }
+    }
+    .footer__list-link {
         &:active {
             &::after {
                 opacity: 1;

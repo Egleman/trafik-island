@@ -159,14 +159,6 @@ const goodSlider = new Swiper('.good__swiper', {
             spaceBetween: 30,
         },
     },
-    // on: {
-    //     progress: function () {
-    //         if (window.innerWidth < 606) {
-    //             checkEndSlider(this, '.good__slider');
-    //         }
-            
-    //     }
-    // }
 });
 const newsSlider = new Swiper('.news__swiper', {
     slidesPerView: 'auto',
@@ -197,13 +189,6 @@ const newsSlider = new Swiper('.news__swiper', {
             spaceBetween: 30,
         },
     },
-    // on: {
-    //     progress: function () {
-    //         if (window.innerWidth < 700) {
-    //             checkEndSlider(this, '.news__slider');
-    //         }
-    //     }
-    // }
 });
 const gallerySlider = new Swiper('.gallery__swiper', {
     slidesPerView: 'auto',
@@ -244,14 +229,6 @@ const historySlider = new Swiper('.history__swiper', {
             slidesPerView: 'auto',
             spaceBetween: 15,
         },
-        // 375: {
-        //     slidesPerView: 1.2,
-        //     spaceBetween: 15,
-        // },
-        // 606: {
-        //     slidesPerView: 1.5,
-        //     spaceBetween: 15,
-        // },
         606: {
             slidesPerView: 'auto',
             spaceBetween: 20,
@@ -261,12 +238,12 @@ const historySlider = new Swiper('.history__swiper', {
             spaceBetween: 30,
         }
     },
-    // on: {
-    //     progress: function () {
-    //         if (window.innerWidth < 700) {
-    //             checkEndSlider(this, '.news__slider');
-    //         }
-    //     }
-    // }
+});
+const modalNewsSlider = new Swiper('.modal-news__swiper', {
+    slidesPerView: 1,
+    navigation: {
+        nextEl: '[data-button="modal-news-next"]',
+        prevEl: '[data-button="modal-news-prev"]',
+    },
 });
 header();

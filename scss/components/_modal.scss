@@ -109,6 +109,156 @@
         animation: openSearchMobileMenu .3s forwards;
     }
 }
+.modal-news {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 16;
+    opacity: 1;
+    padding: 100px 148px 0 148px;
+    transition: .6s all;
+    display: none;
+    &__body {
+        max-width: 1144px;
+        width: 100%;
+        background: #fff;
+        padding: 50px 50px 0 50px;
+        box-sizing: border-box;
+        margin: 0 auto;
+    }
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; 
+        margin-bottom: 75px;
+    }
+    &__date {
+        /* Body text 3 */
+        color: rgb(130, 129, 130);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 142%;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+    &__content {
+        padding: 0 130px 0 65px;
+    }
+    &__title {
+        margin-bottom: 25px;
+        &_h3 {
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 38px;
+            letter-spacing: 3%;
+            text-align: left;
+        }
+        &_h4 {
+            font-size: 26px;
+            font-weight: 700;
+            line-height: 30px;
+            letter-spacing: 3%;
+            text-align: left;
+        }
+        &_h5 {
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 26px;
+            letter-spacing: 3%;
+            text-align: left;
+        }
+    }
+    &__bigtext {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 142%;
+        letter-spacing: 3%;
+        text-align: left;
+    }
+    &__line {
+        background: #79BA2A;
+        height: 3px;
+        width: 100%;
+        margin: 80px 0;
+    }
+    &__text {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 142%;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+    &__slider {
+        margin: 60px 0;
+        // padding: 0 40px;
+        box-sizing: border-box;
+        position: relative;
+    }
+    &__buttons {
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        width: calc(100% + 80px);
+    }
+    &__scroll {
+        height: 100%;
+        overflow: auto;
+        &::-webkit-scrollbar {
+            width: 6px;               /* ширина всей полосы прокрутки */
+          }
+          
+        &::-webkit-scrollbar-track {
+            background: #fff;        /* цвет зоны отслеживания */
+          }
+          
+        &::-webkit-scrollbar-thumb {
+            background: rgb(246, 144, 0);    /* цвет бегунка */
+            border-radius: 20px;       /* округлось бегунка */
+        }
+    }
+    &__slide {
+        height: 450px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__lists {
+        display: flex;
+        gap: 160px;
+        margin-bottom: 60px;
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        &-text {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 142%;
+            letter-spacing: 0%;
+            text-align: left;
+        }
+    }
+    &__smalltext {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 142%;
+        letter-spacing: 3%;
+        text-align: left;
+    }
+    &__mb {
+        margin-bottom: 60px;
+    }
+}
+.modal-news.active {
+    display: flex;
+}
 
 .search.active {
     display: flex;
@@ -124,6 +274,14 @@
         animation: closeMoveSearchForm .3s forwards; 
     }
 }
+@media (max-width: 1250px) {
+    .modal-news {
+        &__lists {
+            gap: 40px;
+            justify-content: space-between;
+        }
+    }
+}
 @media (max-width: 1200px) {
     .mobile-menu.active {
         display: flex;
@@ -137,6 +295,69 @@
         animation: closeSearchModal .6s forwards;
         .mobile-menu__body {
             animation: closeMoveMobileMenu .3s forwards; 
+        }
+    }
+}
+@media (max-width: 1022px) {
+    .modal-news {
+        padding: 80px 115px 0 115px;
+        &__body {
+            max-width: 730px;
+            padding: 30px 30px 0 30px;
+        }
+        &__header {
+            margin-bottom: 30px;
+        }
+        &__content {
+            padding: 0 60px 0 30px;
+        }
+        &__line {
+            margin: 45px 0;
+        }
+        &__slide {
+            height: 300px;
+        }
+        &__buttons {
+            width: calc(100% + 55px);
+        }
+        &__smalltext {
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 142%;
+            letter-spacing: 3%;
+            text-align: left;
+        }
+    }
+}
+@media (max-width: 798px) {
+    .modal-news {
+        padding: 30px 30px 0 30px;
+        &__lists {
+            flex-direction: column;
+            gap: 20px;
+        }
+        &__bigtext {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 142%;
+            letter-spacing: 3%;
+            text-align: left;
+        }
+        &__text {
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 160%;
+            letter-spacing: 0%;
+            text-align: left;
+        }
+        &__content {
+            padding: 0 20px 0 0;
+        }
+        &__buttons {
+            width: 100%;
+        }
+        &__slider {
+            margin: 50px 0;
         }
     }
 }
