@@ -2639,13 +2639,14 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 0.3s all;
 }
 .contacts__middle-link.active {
   background: rgb(121, 186, 42);
   color: #fff;
 }
 .contacts__middle-privacy {
-  display: flex;
+  display: block;
   justify-content: flex-end;
   font-size: 14px;
   font-weight: 500;
@@ -3535,6 +3536,14 @@ body::-webkit-scrollbar-thumb {
     background: #fff;
     color: rgb(121, 186, 42);
   }
+  .contacts__form-button:hover {
+    background: #fff;
+    color: rgb(246, 144, 0);
+  }
+  .contacts__middle-link:hover {
+    color: #fff;
+    background: rgb(121, 186, 42);
+  }
 }
 @media (hover: none) {
   .header__list-link:active::after {
@@ -3577,5 +3586,9 @@ body::-webkit-scrollbar-thumb {
   .articles__list-link:active {
     background: #fff;
     color: rgb(121, 186, 42);
+  }
+  .contacts__form-button:active {
+    background: #fff;
+    color: rgb(246, 144, 0);
   }
 }/*# sourceMappingURL=style.css.map */

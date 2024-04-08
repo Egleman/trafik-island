@@ -427,3 +427,23 @@ if (contactsForm) {
         }
     })
 }
+
+const contactsMiddleList = document.querySelector('.contacts__middle-list');
+if (contactsMiddleList) {
+    const links = document.querySelectorAll('.contacts__middle-link');
+    contactsMiddleList.addEventListener('click', (e) => {
+        e.preventDefault();
+        if (e.target.closest('.contacts__middle-link')) {
+            const btn = e.target.closest('.contacts__middle-link');
+            links.forEach(link => {
+                if (link === btn) {
+                    link.classList.add('active')
+                } else {
+                    if (link.classList.contains('active')) {
+                        link.classList.remove('active')
+                    }
+                }
+            })
+        }
+    })
+}
