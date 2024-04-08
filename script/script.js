@@ -247,3 +247,158 @@ const modalNewsSlider = new Swiper('.modal-news__swiper', {
     },
 });
 header();
+
+const select = document.querySelector('.select');
+const selectList = document.querySelector('.select__list');
+const selectValue = document.querySelector('.select__value-text');
+if (select) {
+    select.addEventListener('click', () => {
+        select.classList.toggle('active');
+    })
+    selectList.addEventListener('click', (e) => {
+        e.preventDefault();
+        if (e.target.closest('.select__list-option')) {
+            selectValue.textContent = e.target.closest('.select__list-option').textContent;
+            setTimeout(() => {
+                if (select.classList.contains('active')) {
+                    select.classList.remove('active');
+                }
+            }, 100)
+        }
+    })
+}
+let videoIndex = 0
+class Accordion {
+    constructor(target, config) {
+        this._el = typeof target === 'string' ? document.querySelector(target) : target;
+        const defaultConfig = {
+            alwaysOpen: true,
+            duration: 350
+        };
+        this._config = Object.assign(defaultConfig, config);
+        this.addEventListener();
+    }
+    addEventListener() {
+        this._el.addEventListener('click', (e) => {
+            const elHeader = e.target.closest('.accordion__header');
+            if (!elHeader) {
+                return;
+            }
+            this.toggle(elHeader.parentElement);
+        });
+    }
+    show(el) {
+        const elBody = el.querySelector('.accordion__body');
+        if (elBody.classList.contains('collapsing') || el.classList.contains('accordion__item_show')) {
+            return;
+        }
+        elBody.style.display = 'block';
+        const height = elBody.offsetHeight;
+        elBody.style.height = 0;
+        elBody.style.overflow = 'hidden';
+        elBody.style.transition = `height ${this._config.duration}ms ease`;
+        elBody.classList.add('collapsing');
+        el.classList.add('accordion__item_slidedown');
+        elBody.offsetHeight;
+        elBody.style.height = `${height}px`;
+        window.setTimeout(() => {
+            elBody.classList.remove('collapsing');
+            el.classList.remove('accordion__item_slidedown');
+            elBody.classList.add('collapse');
+            el.classList.add('accordion__item_show');
+            elBody.style.display = '';
+            elBody.style.height = '';
+            elBody.style.transition = '';
+            elBody.style.overflow = '';
+        }, this._config.duration);
+    }
+    hide(el) {
+        const elBody = el.querySelector('.accordion__body');
+        if (elBody.classList.contains('collapsing') || !el.classList.contains('accordion__item_show')) {
+            return;
+        }
+        elBody.style.height = `${elBody.offsetHeight}px`;
+        elBody.offsetHeight;
+        elBody.style.display = 'block';
+        elBody.style.height = 0;
+        elBody.style.overflow = 'hidden';
+        elBody.style.transition = `height ${this._config.duration}ms ease`;
+        elBody.classList.remove('collapse');
+        el.classList.remove('accordion__item_show');
+        elBody.classList.add('collapsing');
+        window.setTimeout(() => {
+            elBody.classList.remove('collapsing');
+            elBody.classList.add('collapse');
+            elBody.style.display = '';
+            elBody.style.height = '';
+            elBody.style.transition = '';
+            elBody.style.overflow = '';
+        }, this._config.duration);
+    }
+    toggle(el) {
+        const iframe = document.querySelectorAll('.instructions__video > iframe')[videoIndex];
+        if (iframe && videoIndex !== 0) {
+            iframe.src = '';
+            iframe.style.display = 'none';
+            document.querySelectorAll('.instructions__video-play')[videoIndex].style.display = 'flex';
+        }
+        el.classList.contains('accordion__item_show') ? this.hide(el) : this.show(el);
+    }
+}
+const accordions = document.querySelectorAll('.accordion');
+accordions.forEach(accordion => {
+    new Accordion(accordion, {
+        alwaysOpen: false
+    });
+})
+
+const tabPanel = document.querySelector('.instructions__tabs');
+const tabs = document.querySelectorAll('.instructions__tabs-tab');
+const tabsContent = document.querySelectorAll('.instructions__content');
+if (tabPanel) {
+    tabPanel.addEventListener('click', (e) => {
+        e.preventDefault();
+        if (e.target.closest('.instructions__tabs-tab')) {
+            const btn = e.target.closest('.instructions__tabs-tab');
+            tabs.forEach((tab, index) => {
+                if (tab === btn) {
+                    tab.classList.add('active');
+                    tabsContent[index].classList.add('active');
+                } else {
+                    if (tab.classList.contains('active')) {
+                        tab.classList.remove('active');
+                    }
+                    if (tabsContent[index].classList.contains('active')) {
+                        tabsContent[index].classList.remove('active');
+                    }
+                }
+            })
+        }
+    })
+}
+const videos = document.querySelectorAll('.instructions__video');
+if (videos) {
+    videos.forEach((video, index) => {
+        const playButton = video.querySelector('.instructions__video-play');
+        const iframe = video.querySelector('iframe');
+        playButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            document.querySelectorAll('.instructions__video > iframe').forEach((otherVideo, i) => {
+                otherVideo.src = '';
+                otherVideo.style.display = 'none';
+                document.querySelectorAll('.instructions__video-play')[i].style.display = 'flex';
+            })
+            iframe.src = iframe.dataset.src;
+            playButton.style.display = 'none';
+            iframe.style.display = 'block';
+            videoIndex = index;
+            // iframe.contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*');
+        })
+
+    })
+}
+
+// const instuctionsPageAccordions = document.querySelectorAll('.instructions__accordion-header');
+// if (instuctionsPageAccordions) {
+
+// }

@@ -6,7 +6,7 @@
     padding: 0 0 0 0;
     &__container {
         display: grid;
-        grid-template-columns: minmax(15px, 1fr) minmax(200px, 1360px) minmax(15px, 1fr);
+        grid-template-columns: minmax(5px, 1fr) minmax(200px, 1360px) minmax(5px, 1fr);
     }
     &__buttons {
         display: none;
@@ -22,11 +22,13 @@
         flex-direction: column;
         gap: 40px;
         padding-bottom: 30px;
+        padding-left: 40px;
     }
     &__title {
         color: #fff;
     }
     &__swiper {
+        padding-right: 60px;
         .swiper-slide {
             width: max-content !important;
         }
@@ -53,6 +55,7 @@
         }
         &__info {
             padding-bottom: 70px;
+            padding-left: 27.5px;
         }
     }
 }
@@ -72,6 +75,8 @@
             gap: 47px;
             width: 100%;
             box-sizing: border-box;
+            padding-left: 27.5px;
+            padding-right: 27.5px;
         }
         &__title {
             br {

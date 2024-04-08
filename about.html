@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Островок безопасности</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <div class="header__wrapper">
+                <div class="header__block">
+                    <button class="header__burger">
+                        <svg width="28" height="20" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 2L26 2" stroke="black" stroke-width="2.5" stroke-linecap="round" />
+                            <path d="M2 10L26 10" stroke="black" stroke-width="2.5" stroke-linecap="round" />
+                            <path d="M2 18L26 18" stroke="black" stroke-width="2.5" stroke-linecap="round" />
+                        </svg>
+                    </button>
+                    <a href="/" class="header__logo"><img src="./img/ico-header-logo.png" alt="logo-image"></a>
+                </div>
+                <div class="header__body">
+                    <ul class="header__contacts">
+                        <li class="header__contacts-item">
+                            <a href="tel:88007002945" class="header__contacts-link">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.0191585 4.40839C0.0855332 3.67274 0.367626 3.05877 0.898624 2.52777L2.95624 0.470154C3.27705 0.160406 3.63105 0 3.97399 0C4.31139 0 4.65433 0.160406 4.96961 0.481217C5.3402 0.824153 5.68867 1.18368 6.06479 1.56534C6.25285 1.75893 6.44645 1.95252 6.64004 2.15165L8.28835 3.79995C8.63128 4.14289 8.80828 4.49136 8.80828 4.83429C8.80828 5.17723 8.63128 5.5257 8.28835 5.86863C8.11688 6.0401 7.94541 6.2171 7.77394 6.38857C7.25954 6.9085 6.77832 7.40078 6.24732 7.87094L6.21967 7.8986C5.76057 8.35769 5.83248 8.79465 5.94311 9.12653C5.94864 9.14312 5.95417 9.15418 5.9597 9.17078C6.3856 10.1941 6.97745 11.1676 7.90116 12.3291C9.56053 14.3757 11.3084 15.9631 13.2333 17.1855C13.4711 17.3404 13.7255 17.4621 13.9634 17.5838C14.1846 17.6944 14.3893 17.7995 14.5718 17.9156C14.5939 17.9267 14.6105 17.9378 14.6327 17.9488C14.8152 18.0429 14.9922 18.0871 15.1692 18.0871C15.6117 18.0871 15.8993 17.805 15.9933 17.711L18.062 15.6423C18.3828 15.3215 18.7313 15.15 19.0742 15.15C19.4946 15.15 19.8376 15.41 20.0533 15.6423L23.3886 18.9721C24.0523 19.6359 24.0468 20.3549 23.372 21.0574C23.1397 21.3063 22.8963 21.5441 22.6364 21.793C22.2492 22.1692 21.8454 22.5564 21.4803 22.9933C20.8442 23.6792 20.0865 24 19.1074 24C19.0134 24 18.9138 23.9945 18.8198 23.9889C17.0056 23.8728 15.3185 23.1648 14.0519 22.5619C10.6115 20.897 7.59141 18.5351 5.08576 15.5372C3.02262 13.0537 1.63428 10.7416 0.716093 8.26366C0.146377 6.74257 -0.0693412 5.52017 0.0191585 4.40839Z"
+                                        fill="#F69000" />
+                                </svg>
+                                8-800-700-29-45
+                            </a>
+                        </li>
+                        <li class="header__contacts-item">
+                            <a href="tel:88007000934" class="header__contacts-link">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.0191585 4.40839C0.0855332 3.67274 0.367626 3.05877 0.898624 2.52777L2.95624 0.470154C3.27705 0.160406 3.63105 0 3.97399 0C4.31139 0 4.65433 0.160406 4.96961 0.481217C5.3402 0.824153 5.68867 1.18368 6.06479 1.56534C6.25285 1.75893 6.44645 1.95252 6.64004 2.15165L8.28835 3.79995C8.63128 4.14289 8.80828 4.49136 8.80828 4.83429C8.80828 5.17723 8.63128 5.5257 8.28835 5.86863C8.11688 6.0401 7.94541 6.2171 7.77394 6.38857C7.25954 6.9085 6.77832 7.40078 6.24732 7.87094L6.21967 7.8986C5.76057 8.35769 5.83248 8.79465 5.94311 9.12653C5.94864 9.14312 5.95417 9.15418 5.9597 9.17078C6.3856 10.1941 6.97745 11.1676 7.90116 12.3291C9.56053 14.3757 11.3084 15.9631 13.2333 17.1855C13.4711 17.3404 13.7255 17.4621 13.9634 17.5838C14.1846 17.6944 14.3893 17.7995 14.5718 17.9156C14.5939 17.9267 14.6105 17.9378 14.6327 17.9488C14.8152 18.0429 14.9922 18.0871 15.1692 18.0871C15.6117 18.0871 15.8993 17.805 15.9933 17.711L18.062 15.6423C18.3828 15.3215 18.7313 15.15 19.0742 15.15C19.4946 15.15 19.8376 15.41 20.0533 15.6423L23.3886 18.9721C24.0523 19.6359 24.0468 20.3549 23.372 21.0574C23.1397 21.3063 22.8963 21.5441 22.6364 21.793C22.2492 22.1692 21.8454 22.5564 21.4803 22.9933C20.8442 23.6792 20.0865 24 19.1074 24C19.0134 24 18.9138 23.9945 18.8198 23.9889C17.0056 23.8728 15.3185 23.1648 14.0519 22.5619C10.6115 20.897 7.59141 18.5351 5.08576 15.5372C3.02262 13.0537 1.63428 10.7416 0.716093 8.26366C0.146377 6.74257 -0.0693412 5.52017 0.0191585 4.40839Z"
+                                        fill="#F69000" />
+                                </svg>
+                                8-800-700-09-34
+                            </a>
+                        </li>
+                    </ul>
+                    <nav class="header__nav">
+                        <ul class="header__list">
+                            <li class="header__list-item"><a href="#" class="header__list-link">О нас</a></li>
+                            <li class="header__list-item"><a href="#" class="header__list-link">как подключиться к
+                                    проекту</a></li>
+                            <li class="header__list-item"><a href="#" class="header__list-link">Полезно знать</a></li>
+                            <li class="header__list-item"><a href="#" class="header__list-link">Наши истории</a></li>
+                            <li class="header__list-item"><a href="#" class="header__list-link">Контакты</a></li>
+                            <li class="header__list-item">
+                                <a href="#" class="header__list-link header__list-link_icon">
+                                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15.8877 16.3076L23.5801 24" stroke="black" stroke-width="2.5" />
+                                        <path
+                                            d="M18.6221 9.93605C18.6221 14.7332 14.7332 18.6221 9.93605 18.6221C5.13888 18.6221 1.25 14.7332 1.25 9.93605C1.25 5.13888 5.13888 1.25 9.93605 1.25C14.7332 1.25 18.6221 5.13888 18.6221 9.93605Z"
+                                            stroke="black" stroke-width="2.5" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header__image">
+                    <img src="./img/ico-header-image.png" alt="image">
+                </div>
+            </div>
+            <a href="tel:88007002945" class="header__callback">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M0.0192529 4.40839C0.0859548 3.67274 0.369438 3.05877 0.903053 2.52777L2.97081 0.470154C3.2932 0.160406 3.64895 0 3.99357 0C4.33264 0 4.67727 0.160406 4.9941 0.481217C5.36652 0.824153 5.7167 1.18368 6.09468 1.56534C6.28367 1.75893 6.47822 1.95252 6.67277 2.15165L8.3292 3.79995C8.67382 4.14289 8.85169 4.49136 8.85169 4.83429C8.85169 5.17723 8.67382 5.5257 8.3292 5.86863C8.15688 6.0401 7.98457 6.2171 7.81226 6.38857C7.29532 6.9085 6.81173 7.40078 6.27811 7.87094L6.25032 7.8986C5.78897 8.35769 5.86123 8.79465 5.9724 9.12653C5.97795 9.14312 5.98351 9.15418 5.98907 9.17078C6.41707 10.1941 7.01183 11.1676 7.9401 12.3291C9.60765 14.3757 11.3641 15.9631 13.2985 17.1855C13.5375 17.3404 13.7932 17.4621 14.0322 17.5838C14.2545 17.6944 14.4602 17.7995 14.6436 17.9156C14.6659 17.9267 14.6825 17.9378 14.7048 17.9488C14.8882 18.0429 15.0661 18.0871 15.244 18.0871C15.6886 18.0871 15.9777 17.805 16.0722 17.711L18.151 15.6423C18.4734 15.3215 18.8236 15.15 19.1682 15.15C19.5907 15.15 19.9353 15.41 20.1521 15.6423L23.5039 18.9721C24.1709 19.6359 24.1653 20.3549 23.4872 21.0574C23.2537 21.3063 23.0092 21.5441 22.7479 21.793C22.3588 22.1692 21.9531 22.5564 21.5862 22.9933C20.947 23.6792 20.1855 24 19.2016 24C19.1071 24 19.0071 23.9945 18.9126 23.9889C17.0894 23.8728 15.394 23.1648 14.1211 22.5619C10.6638 20.897 7.62883 18.5351 5.11083 15.5372C3.03751 13.0537 1.64233 10.7416 0.719623 8.26366C0.147098 6.74257 -0.0696829 5.52017 0.0192529 4.40839Z"
+                        fill="white" />
+                </svg>
+                Позвоните нам
+            </a>
+        </div>
+    </header>
+    <main>
+        <section class="about">
+            <div class="container">
+                <div class="about__wrapper">
+                    <ul class="about__list">
+                        <li class="about__list-item">
+                            <div class="about__hashtag">
+                                <svg width="26" height="33" viewBox="0 0 26 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.32654 32.6165L10.3301 0H14.004L8.00037 32.6165H4.32654ZM13.0631 32.6165L19.0667 0H22.7405L16.7369 32.6165H13.0631ZM25.7871 12.7912H2.48962V9.319H25.7871V12.7912ZM24.107 23.4319H0.787109V19.9597H24.107V23.4319Z" fill="#F69000"/>
+                                </svg>
+                                О ЦППЛ
+                            </div>
+                        </li>
+                        <li class="about__list-item">
+                            <div class="about__hashtag">
+                                <svg width="26" height="33" viewBox="0 0 26 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.32654 32.6165L10.3301 0H14.004L8.00037 32.6165H4.32654ZM13.0631 32.6165L19.0667 0H22.7405L16.7369 32.6165H13.0631ZM25.7871 12.7912H2.48962V9.319H25.7871V12.7912ZM24.107 23.4319H0.787109V19.9597H24.107V23.4319Z" fill="#F69000"/>
+                                </svg>
+                                Новости
+                            </div>
+                        </li>
+                        <li class="about__list-item">
+                            <div class="about__hashtag">
+                                <svg width="26" height="33" viewBox="0 0 26 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.32654 32.6165L10.3301 0H14.004L8.00037 32.6165H4.32654ZM13.0631 32.6165L19.0667 0H22.7405L16.7369 32.6165H13.0631ZM25.7871 12.7912H2.48962V9.319H25.7871V12.7912ZM24.107 23.4319H0.787109V19.9597H24.107V23.4319Z" fill="#F69000"/>
+                                </svg>
+                                кто нам помогает
+                            </div>
+                        </li>
+                    </ul>
+                    <h1 class="title about__title">О проекте</h1>
+                    <p class="about__text">
+                        «Островок безопасности» – это партнёрский проект АНО «ЦППЛ», 
+                        целью которого помочь потерявшимся и дезориентированным людям 
+                        и вернуть их домой. «Островки безопасности» успешно работают 
+                        уже более чем в 34000 точек по всей России. Партнёры проекта - 
+                        Торговая сеть «Пятёрочка», ПАО СБЕРБАНК, ПАО «ВымпелКом» 
+                        (бренд билайн), Сеть магазинов ВкусВилл, Торговая сеть «Перекрёсток», 
+                        Почта России, Московский зоопарк, волгоградская сеть многопрофильных клиник "Диалайн".
+                    </p>
+                </div>
+            </div>
+            <div class="hero__triangle">
+                <svg width="1920" height="170" viewBox="0 0 1920 170" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g filter="url(#filter0_d_4316_8)">
+                        <path d="M1924 170.5H4L1924 0V170.5Z" fill="#79BA2A" />
+                    </g>
+                    <defs>
+                        <filter id="filter0_d_4316_8" x="0" y="0" width="1920" height="170" filterUnits="userSpaceOnUse"
+                            color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                            <feOffset dy="4" />
+                            <feGaussianBlur stdDeviation="2" />
+                            <feComposite in2="hardAlpha" operator="out" />
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_4316_8" />
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_4316_8" result="shape" />
+                        </filter>
+                    </defs>
+                </svg>
+            </div>
+        </section>
+        <section class="cppl">
+            <div class="container">
+                <div class="cppl__wrapper">
+                    <h2 class="title cppl__title">О «ЦППЛ»</h2>
+                    <div class="cppl__text">
+                        АНО «Центр поиска пропавших людей» - ресурсный центр, который занимается поддержкой и 
+                        развитием поискового добровольчества по всем регионам РФ, в числе которых поисковый 
+                        отряд «ЛизаАлерт». Помогает в организации поисковых мероприятий, оснащении оборудованием 
+                        и привлечении необходимых для поисков ресурсов. Занимается подготовкой добровольцев, 
+                        организацией значимых мероприятий (полевые учения, форумы). АНО «ЦППЛ» также реализует 
+                        важные социальные проекты по поисковым мерам и профилактике пропаж среди всех возрастных 
+                        групп. Среди них - "Островок безопасности" и "Браслет Амулет".
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="news">
+            <div class="container">
+                <h2 class="title news__title">Новости</h2>
+            </div>
+            <div class="news__container">
+                <div class="news__slider">
+                    <div class="swiper news__swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="news__slide">
+                                    <div class="card">
+                                        <div class="card__image">
+                                            <img src="./img/main/news-section/news-card-image.png" alt="image">
+                                        </div>
+                                        <div class="card__title">
+                                            Новость 1
+                                            Островок безопасности
+                                        </div>
+                                        <div class="card__text">
+                                            Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор
+                                            слов, но это не совсем так.
+                                        </div>
+                                        <a href="#" class="card__button" toggle="#modal-news">
+                                            Читать
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="news__slide">
+                                    <div class="card">
+                                        <div class="card__image">
+                                            <img src="./img/main/news-section/news-card-image.png" alt="image">
+                                        </div>
+                                        <div class="card__title">
+                                            Новость 1
+                                            Островок безопасности
+                                        </div>
+                                        <div class="card__text">
+                                            Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор
+                                            слов, но это не совсем так.
+                                        </div>
+                                        <a href="#" class="card__button" toggle="#modal-news">
+                                            Читать
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="news__slide">
+                                    <div class="card">
+                                        <div class="card__image">
+                                            <img src="./img/main/news-section/news-card-image.png" alt="image">
+                                        </div>
+                                        <div class="card__title">
+                                            Новость 1
+                                            Островок безопасности
+                                        </div>
+                                        <div class="card__text">
+                                            Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор
+                                            слов, но это не совсем так.
+                                        </div>
+                                        <a href="#" class="card__button" toggle="#modal-news">
+                                            Читать
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="news__slide">
+                                    <div class="card">
+                                        <div class="card__image">
+                                            <img src="./img/main/news-section/news-card-image.png" alt="image">
+                                        </div>
+                                        <div class="card__title">
+                                            Новость 1
+                                            Островок безопасности
+                                        </div>
+                                        <div class="card__text">
+                                            Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор
+                                            слов, но это не совсем так.
+                                        </div>
+                                        <a href="#" class="card__button" toggle="#modal-news">
+                                            Читать
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="good__buttons">
+                    <button class="good__arrow prev" data-button="news-prev">
+                        <svg width="19" height="32" viewBox="0 0 19 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.1421 1.85786L3 16L17.1421 30.1421" stroke="#79BA2A" stroke-width="3" />
+                        </svg>
+                    </button>
+                    <button class="good__arrow next" data-button="news-next">
+                        <svg width="19" height="32" viewBox="0 0 19 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.85786 1.85786L16 16L1.85786 30.1421" stroke="#79BA2A" stroke-width="3" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="who">
+            <div class="container">
+                <div class="who__wrapper">
+                    <div class="who__top">
+                        <h2 class="title who__title">
+                            Кто нам помогает:<br>
+                            отряды<br> добровольцев
+                        </h2>
+                        <div class="who__select">
+                            <div class="select">
+                                <div class="select__value">
+                                    <p class="select__value-text">Выбрать регион</p>
+                                    <svg class="select__value-arrow" width="32" height="19" viewBox="0 0 32 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M29.9996 2.00044L15.8574 16.1426L1.71529 2.00044" stroke="#79BA2A" stroke-width="3"/>
+                                    </svg>
+                                </div>
+                                <div class="select__body">
+                                    <ul class="select__list">
+                                        <li class="select__list-item"><a href="#" class="select__list-option">Россия</a></li>
+                                        <li class="select__list-item"><a href="#" class="select__list-option">США</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="who__grid">
+                        <div class="card">
+                            <div class="card__title">
+                                Название отряда
+                            </div>
+                            <div class="card__text">
+                                Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так.
+                            </div>
+                            <a href="#" class="card__button" toggle="#modal-news">
+                                подробнее
+                            </a>
+                        </div>
+                        <div class="card">
+                            <div class="card__title">
+                                Название отряда
+                            </div>
+                            <div class="card__text">
+                                Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так.
+                            </div>
+                            <a href="#" class="card__button" toggle="#modal-news">
+                                подробнее
+                            </a>
+                        </div>
+                        <div class="card">
+                            <div class="card__title">
+                                Название отряда
+                            </div>
+                            <div class="card__text">
+                                Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так.
+                            </div>
+                            <a href="#" class="card__button" toggle="#modal-news">
+                                подробнее
+                            </a>
+                        </div>
+                        <div class="card">
+                            <div class="card__title">
+                                Название отряда
+                            </div>
+                            <div class="card__text">
+                                Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так.
+                            </div>
+                            <a href="#" class="card__button" toggle="#modal-news">
+                                подробнее
+                            </a>
+                        </div>
+                        <div class="card">
+                            <div class="card__title">
+                                Название отряда
+                            </div>
+                            <div class="card__text">
+                                Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так.
+                            </div>
+                            <a href="#" class="card__button" toggle="#modal-news">
+                                подробнее
+                            </a>
+                        </div>
+                        <div class="card">
+                            <div class="card__title">
+                                Название отряда
+                            </div>
+                            <div class="card__text">
+                                Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так.
+                            </div>
+                            <a href="#" class="card__button" toggle="#modal-news">
+                                подробнее
+                            </a>
+                        </div>
+                        <div class="card">
+                            <div class="card__title">
+                                Название отряда
+                            </div>
+                            <div class="card__text">
+                                Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так.
+                            </div>
+                            <a href="#" class="card__button" toggle="#modal-news">
+                                подробнее
+                            </a>
+                        </div>
+                        <div class="card">
+                            <div class="card__title">
+                                Название отряда
+                            </div>
+                            <div class="card__text">
+                                Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так.
+                            </div>
+                            <a href="#" class="card__button" toggle="#modal-news">
+                                подробнее
+                            </a>
+                        </div>
+                        <div class="card">
+                            <div class="card__title">
+                                Название отряда
+                            </div>
+                            <div class="card__text">
+                                Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так.
+                            </div>
+                            <a href="#" class="card__button" toggle="#modal-news">
+                                подробнее
+                            </a>
+                        </div>
+                        <div class="card">
+                            <div class="card__title">
+                                Название отряда
+                            </div>
+                            <div class="card__text">
+                                Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так.
+                            </div>
+                            <a href="#" class="card__button" toggle="#modal-news">
+                                подробнее
+                            </a>
+                        </div>
+                        <div class="card">
+                            <div class="card__title">
+                                Название отряда
+                            </div>
+                            <div class="card__text">
+                                Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так.
+                            </div>
+                            <a href="#" class="card__button" toggle="#modal-news">
+                                подробнее
+                            </a>
+                        </div>
+                        <div class="card">
+                            <div class="card__title">
+                                Название отряда
+                            </div>
+                            <div class="card__text">
+                                Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так.
+                            </div>
+                            <a href="#" class="card__button" toggle="#modal-news">
+                                подробнее
+                            </a>
+                        </div>
+                        <div class="card">
+                            <div class="card__title">
+                                Название отряда
+                            </div>
+                            <div class="card__text">
+                                Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так.
+                            </div>
+                            <a href="#" class="card__button" toggle="#modal-news">
+                                подробнее
+                            </a>
+                        </div>
+                        <div class="card">
+                            <div class="card__title">
+                                Название отряда
+                            </div>
+                            <div class="card__text">
+                                Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так.
+                            </div>
+                            <a href="#" class="card__button" toggle="#modal-news">
+                                подробнее
+                            </a>
+                        </div>
+                        <div class="card">
+                            <div class="card__title">
+                                Название отряда
+                            </div>
+                            <div class="card__text">
+                                Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так.
+                            </div>
+                            <a href="#" class="card__button" toggle="#modal-news">
+                                подробнее
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__column footer__column_1">
+                    <div class="footer__description">
+                        Проект создан при участии поискового отряда «ЛизаАлерт» и реализуется совместно с партнёрами
+                        проекта
+                    </div>
+                    <div class="footer__images">
+                        <a href="#" class="footer__logo">
+                            <img src="./img/footer/logo-ico.png" alt="footer-logo">
+                        </a>
+                        <a href="#" class="footer__liza"><img src="./img/footer/liza-alert-ico.png" alt="image"></a>
+                    </div>
+                    <p class="footer__copyright">© Copyright 2018 ЦППЛ - Все права защищены</p>
+                    <div class="footer__designer">
+                        <p class="footer__designer-text">Разработка и создание сайта:</p>
+                        <a href="#" class="footer__designer-image">
+                            <img src="./img/footer/enterno-logo-icon.svg" alt="image">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__column footer__column_2">
+                    <ul class="footer__list">
+                        <li class="footer__list-item"><a href="#" class="footer__list-link">О нас</a></li>
+                        <li class="footer__list-item"><a href="#" class="footer__list-link">как подключиться к
+                                проекту</a></li>
+                        <li class="footer__list-item"><a href="#" class="footer__list-link">Полезно знать</a></li>
+                        <li class="footer__list-item"><a href="#" class="footer__list-link">Наши истории</a></li>
+                        <li class="footer__list-item"><a href="#" class="footer__list-link">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer__column footer__column_3">
+                    <ul class="footer__contacts">
+                        <li class="footer__contacts-item">
+                            <a href="tel:88007002945" class="footer__contacts-link">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.0191585 4.40839C0.0855332 3.67274 0.367626 3.05877 0.898624 2.52777L2.95624 0.470154C3.27705 0.160406 3.63105 0 3.97399 0C4.31139 0 4.65433 0.160406 4.96961 0.481217C5.3402 0.824153 5.68867 1.18368 6.06479 1.56534C6.25285 1.75893 6.44645 1.95252 6.64004 2.15165L8.28835 3.79995C8.63128 4.14289 8.80828 4.49136 8.80828 4.83429C8.80828 5.17723 8.63128 5.5257 8.28835 5.86863C8.11688 6.0401 7.94541 6.2171 7.77394 6.38857C7.25954 6.9085 6.77832 7.40078 6.24732 7.87094L6.21967 7.8986C5.76057 8.35769 5.83248 8.79465 5.94311 9.12653C5.94864 9.14312 5.95417 9.15418 5.9597 9.17078C6.3856 10.1941 6.97745 11.1676 7.90116 12.3291C9.56053 14.3757 11.3084 15.9631 13.2333 17.1855C13.4711 17.3404 13.7255 17.4621 13.9634 17.5838C14.1846 17.6944 14.3893 17.7995 14.5718 17.9156C14.5939 17.9267 14.6105 17.9378 14.6327 17.9488C14.8152 18.0429 14.9922 18.0871 15.1692 18.0871C15.6117 18.0871 15.8993 17.805 15.9933 17.711L18.062 15.6423C18.3828 15.3215 18.7313 15.15 19.0742 15.15C19.4946 15.15 19.8376 15.41 20.0533 15.6423L23.3886 18.9721C24.0523 19.6359 24.0468 20.3549 23.372 21.0574C23.1397 21.3063 22.8963 21.5441 22.6364 21.793C22.2492 22.1692 21.8454 22.5564 21.4803 22.9933C20.8442 23.6792 20.0865 24 19.1074 24C19.0134 24 18.9138 23.9945 18.8198 23.9889C17.0056 23.8728 15.3185 23.1648 14.0519 22.5619C10.6115 20.897 7.59141 18.5351 5.08576 15.5372C3.02262 13.0537 1.63428 10.7416 0.716093 8.26366C0.146377 6.74257 -0.0693412 5.52017 0.0191585 4.40839Z"
+                                        fill="#F69000" />
+                                </svg>
+                                8-800-700-29-45
+                            </a>
+                        </li>
+                        <li class="footer__contacts-item">
+                            <a href="tel:88007000934" class="footer__contacts-link">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.0191585 4.40839C0.0855332 3.67274 0.367626 3.05877 0.898624 2.52777L2.95624 0.470154C3.27705 0.160406 3.63105 0 3.97399 0C4.31139 0 4.65433 0.160406 4.96961 0.481217C5.3402 0.824153 5.68867 1.18368 6.06479 1.56534C6.25285 1.75893 6.44645 1.95252 6.64004 2.15165L8.28835 3.79995C8.63128 4.14289 8.80828 4.49136 8.80828 4.83429C8.80828 5.17723 8.63128 5.5257 8.28835 5.86863C8.11688 6.0401 7.94541 6.2171 7.77394 6.38857C7.25954 6.9085 6.77832 7.40078 6.24732 7.87094L6.21967 7.8986C5.76057 8.35769 5.83248 8.79465 5.94311 9.12653C5.94864 9.14312 5.95417 9.15418 5.9597 9.17078C6.3856 10.1941 6.97745 11.1676 7.90116 12.3291C9.56053 14.3757 11.3084 15.9631 13.2333 17.1855C13.4711 17.3404 13.7255 17.4621 13.9634 17.5838C14.1846 17.6944 14.3893 17.7995 14.5718 17.9156C14.5939 17.9267 14.6105 17.9378 14.6327 17.9488C14.8152 18.0429 14.9922 18.0871 15.1692 18.0871C15.6117 18.0871 15.8993 17.805 15.9933 17.711L18.062 15.6423C18.3828 15.3215 18.7313 15.15 19.0742 15.15C19.4946 15.15 19.8376 15.41 20.0533 15.6423L23.3886 18.9721C24.0523 19.6359 24.0468 20.3549 23.372 21.0574C23.1397 21.3063 22.8963 21.5441 22.6364 21.793C22.2492 22.1692 21.8454 22.5564 21.4803 22.9933C20.8442 23.6792 20.0865 24 19.1074 24C19.0134 24 18.9138 23.9945 18.8198 23.9889C17.0056 23.8728 15.3185 23.1648 14.0519 22.5619C10.6115 20.897 7.59141 18.5351 5.08576 15.5372C3.02262 13.0537 1.63428 10.7416 0.716093 8.26366C0.146377 6.74257 -0.0693412 5.52017 0.0191585 4.40839Z"
+                                        fill="#F69000" />
+                                </svg>
+                                8-800-700-09-34
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="footer__messangers">
+                        <p class="footer__messangers-text">Напишите нам:</p>
+                        <ul class="footer__messangers-list">
+                            <li class="footer__messangers-item">
+                                <a href="#" class="footer__messangers-link">
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="15" cy="15" r="15" fill="#0077FF" />
+                                        <path
+                                            d="M15.9625 21.6125C9.125 21.6125 5.225 16.925 5.0625 9.125H8.4875C8.6 14.85 11.125 17.275 13.125 17.775V9.125H16.35V14.0625C18.325 13.85 20.4 11.6 21.1 9.125H24.325C24.0612 10.4086 23.5354 11.624 22.7805 12.6951C22.0255 13.7662 21.0577 14.67 19.9375 15.35C21.1879 15.9713 22.2923 16.8507 23.1779 17.9302C24.0635 19.0097 24.7101 20.2648 25.075 21.6125H21.525C21.1974 20.4419 20.5316 19.394 19.611 18.6002C18.6905 17.8063 17.5561 17.3019 16.35 17.15V21.6125H15.9625Z"
+                                            fill="white" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer__messangers-item">
+                                <a href="#" class="footer__messangers-link">
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <mask id="mask0_500_4525" style="mask-type:alpha" maskUnits="userSpaceOnUse"
+                                            x="0" y="0" width="30" height="30">
+                                            <circle cx="15" cy="15" r="15" fill="#0077FF" />
+                                        </mask>
+                                        <g mask="url(#mask0_500_4525)">
+                                            <path
+                                                d="M14.375 30H15.625C22.425 30 25.8125 30 27.9125 27.9C30 25.8 30 22.4 30 15.625V14.35C30 7.6 30 4.2 27.9125 2.1C25.8125 0 22.4125 0 15.625 0H14.375C7.575 0 4.1875 0 2.0875 2.1C0 4.2 0 7.6 0 14.375V15.65C0 22.4 0 25.8 2.1 27.9C4.2 30 7.6 30 14.375 30Z"
+                                                fill="#FF7700" />
+                                            <rect x="-6.25" y="-8.75" width="78.75" height="47.25"
+                                                fill="url(#pattern0_500_4525)" />
+                                        </g>
+                                        <defs>
+                                            <pattern id="pattern0_500_4525" patternContentUnits="objectBoundingBox"
+                                                width="1" height="1">
+                                                <use xlink:href="#image0_500_4525"
+                                                    transform="scale(0.00625 0.0104167)" />
+                                            </pattern>
+                                            <image id="image0_500_4525" width="160" height="96"
+                                                xlink:href="data:image/png;base64,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" />
+                                        </defs>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer__messangers-item">
+                                <a href="#" class="footer__messangers-link">
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 0 15 0C6.71573 0 0 6.71573 0 15C0 23.2843 6.71573 30 15 30Z"
+                                            fill="#039BE5" />
+                                        <path
+                                            d="M6.86383 14.6748L21.3263 9.09852C21.9976 8.85602 22.5838 9.26227 22.3663 10.2773L22.3676 10.276L19.9051 21.8773C19.7226 22.6998 19.2338 22.8998 18.5501 22.5123L14.8001 19.7485L12.9913 21.491C12.7913 21.691 12.6226 21.8598 12.2351 21.8598L12.5013 18.0435L19.4513 11.7648C19.7538 11.4985 19.3838 11.3485 18.9851 11.6135L10.3963 17.021L6.69383 15.866C5.89008 15.611 5.87258 15.0623 6.86383 14.6748Z"
+                                            fill="white" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="footer__copyright footer__copyright_mobile">© Copyright 2018 ЦППЛ - Все права защищены</p>
+                <div class="footer__designer footer__designer_mobile">
+                    <p class="footer__designer-text">Разработка и создание сайта:</p>
+                    <a href="#" class="footer__designer-image">
+                        <img src="./img/footer/enterno-logo-icon.svg" alt="image">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="search">
+        <div class="header__search">
+            <form action="#" class="header__search-form">
+                <input type="text" placeholder="Поиск" class="header__search-input">
+                <div class="header__search-buttons">
+                    <button type="reset" class="header__search-button">
+                        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.48535 8.48535L25.4559 25.4559" stroke="black" stroke-width="2.5"
+                                stroke-linecap="round" />
+                            <path d="M25.4561 8.48535L8.48549 25.4559" stroke="black" stroke-width="2.5"
+                                stroke-linecap="round" />
+                        </svg>
+                    </button>
+                    <button type="submit" class="header__search-button">
+                        <svg width="25" height="26" viewBox="0 0 25 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.8887 17.2783L23.5811 24.9707" stroke="black" stroke-width="2.5" />
+                            <path
+                                d="M18.6221 10.9068C18.6221 15.7039 14.7332 19.5928 9.93605 19.5928C5.13888 19.5928 1.25 15.7039 1.25 10.9068C1.25 6.10958 5.13888 2.2207 9.93605 2.2207C14.7332 2.2207 18.6221 6.10958 18.6221 10.9068Z"
+                                stroke="black" stroke-width="2.5" />
+                        </svg>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="mobile-menu">
+        <div class="mobile-menu__body">
+            <button class="mobile-menu__close">
+                <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.51465 8.51465L25.4852 25.4852" stroke="black" stroke-width="2.5"
+                        stroke-linecap="round" />
+                    <path d="M25.4854 8.51465L8.51479 25.4852" stroke="black" stroke-width="2.5"
+                        stroke-linecap="round" />
+                </svg>
+            </button>
+            <button class="mobile-menu__back">
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M0.166016 11L10.6179 0.548079L12.0763 2.00649L3.08283 11L12.0763 19.9935L10.6179 21.4519L0.166016 11Z"
+                        fill="black" />
+                    <rect x="3" y="10" width="18" height="2" fill="black" />
+                </svg>
+            </button>
+            <div class="mobile-menu__wrapper">
+                <ul class="header__list header__list_mobile">
+                    <li class="header__list-item"><a href="#" class="header__list-link">О нас</a></li>
+                    <li class="header__list-item"><a href="#" class="header__list-link">как подключиться к проекту</a>
+                    </li>
+                    <li class="header__list-item"><a href="#" class="header__list-link">Полезно знать</a></li>
+                    <li class="header__list-item"><a href="#" class="header__list-link">Наши истории</a></li>
+                    <li class="header__list-item"><a href="#" class="header__list-link">Контакты</a></li>
+                    <li class="header__list-item">
+                        <a href="#" class="header__list-link header__list-link_icon" data-button="mobile-search">
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.8877 16.3076L23.5801 24" stroke="black" stroke-width="2.5" />
+                                <path
+                                    d="M18.6221 9.93605C18.6221 14.7332 14.7332 18.6221 9.93605 18.6221C5.13888 18.6221 1.25 14.7332 1.25 9.93605C1.25 5.13888 5.13888 1.25 9.93605 1.25C14.7332 1.25 18.6221 5.13888 18.6221 9.93605Z"
+                                    stroke="black" stroke-width="2.5" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="header__contacts header__contacts_mobile">
+                    <li class="header__contacts-item">
+                        <a href="tel:88007002945" class="header__contacts-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.0191585 4.40839C0.0855332 3.67274 0.367626 3.05877 0.898624 2.52777L2.95624 0.470154C3.27705 0.160406 3.63105 0 3.97399 0C4.31139 0 4.65433 0.160406 4.96961 0.481217C5.3402 0.824153 5.68867 1.18368 6.06479 1.56534C6.25285 1.75893 6.44645 1.95252 6.64004 2.15165L8.28835 3.79995C8.63128 4.14289 8.80828 4.49136 8.80828 4.83429C8.80828 5.17723 8.63128 5.5257 8.28835 5.86863C8.11688 6.0401 7.94541 6.2171 7.77394 6.38857C7.25954 6.9085 6.77832 7.40078 6.24732 7.87094L6.21967 7.8986C5.76057 8.35769 5.83248 8.79465 5.94311 9.12653C5.94864 9.14312 5.95417 9.15418 5.9597 9.17078C6.3856 10.1941 6.97745 11.1676 7.90116 12.3291C9.56053 14.3757 11.3084 15.9631 13.2333 17.1855C13.4711 17.3404 13.7255 17.4621 13.9634 17.5838C14.1846 17.6944 14.3893 17.7995 14.5718 17.9156C14.5939 17.9267 14.6105 17.9378 14.6327 17.9488C14.8152 18.0429 14.9922 18.0871 15.1692 18.0871C15.6117 18.0871 15.8993 17.805 15.9933 17.711L18.062 15.6423C18.3828 15.3215 18.7313 15.15 19.0742 15.15C19.4946 15.15 19.8376 15.41 20.0533 15.6423L23.3886 18.9721C24.0523 19.6359 24.0468 20.3549 23.372 21.0574C23.1397 21.3063 22.8963 21.5441 22.6364 21.793C22.2492 22.1692 21.8454 22.5564 21.4803 22.9933C20.8442 23.6792 20.0865 24 19.1074 24C19.0134 24 18.9138 23.9945 18.8198 23.9889C17.0056 23.8728 15.3185 23.1648 14.0519 22.5619C10.6115 20.897 7.59141 18.5351 5.08576 15.5372C3.02262 13.0537 1.63428 10.7416 0.716093 8.26366C0.146377 6.74257 -0.0693412 5.52017 0.0191585 4.40839Z"
+                                    fill="#F69000" />
+                            </svg>
+                            8-800-700-29-45
+                        </a>
+                    </li>
+                    <li class="header__contacts-item">
+                        <a href="tel:88007000934" class="header__contacts-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.0191585 4.40839C0.0855332 3.67274 0.367626 3.05877 0.898624 2.52777L2.95624 0.470154C3.27705 0.160406 3.63105 0 3.97399 0C4.31139 0 4.65433 0.160406 4.96961 0.481217C5.3402 0.824153 5.68867 1.18368 6.06479 1.56534C6.25285 1.75893 6.44645 1.95252 6.64004 2.15165L8.28835 3.79995C8.63128 4.14289 8.80828 4.49136 8.80828 4.83429C8.80828 5.17723 8.63128 5.5257 8.28835 5.86863C8.11688 6.0401 7.94541 6.2171 7.77394 6.38857C7.25954 6.9085 6.77832 7.40078 6.24732 7.87094L6.21967 7.8986C5.76057 8.35769 5.83248 8.79465 5.94311 9.12653C5.94864 9.14312 5.95417 9.15418 5.9597 9.17078C6.3856 10.1941 6.97745 11.1676 7.90116 12.3291C9.56053 14.3757 11.3084 15.9631 13.2333 17.1855C13.4711 17.3404 13.7255 17.4621 13.9634 17.5838C14.1846 17.6944 14.3893 17.7995 14.5718 17.9156C14.5939 17.9267 14.6105 17.9378 14.6327 17.9488C14.8152 18.0429 14.9922 18.0871 15.1692 18.0871C15.6117 18.0871 15.8993 17.805 15.9933 17.711L18.062 15.6423C18.3828 15.3215 18.7313 15.15 19.0742 15.15C19.4946 15.15 19.8376 15.41 20.0533 15.6423L23.3886 18.9721C24.0523 19.6359 24.0468 20.3549 23.372 21.0574C23.1397 21.3063 22.8963 21.5441 22.6364 21.793C22.2492 22.1692 21.8454 22.5564 21.4803 22.9933C20.8442 23.6792 20.0865 24 19.1074 24C19.0134 24 18.9138 23.9945 18.8198 23.9889C17.0056 23.8728 15.3185 23.1648 14.0519 22.5619C10.6115 20.897 7.59141 18.5351 5.08576 15.5372C3.02262 13.0537 1.63428 10.7416 0.716093 8.26366C0.146377 6.74257 -0.0693412 5.52017 0.0191585 4.40839Z"
+                                    fill="#F69000" />
+                            </svg>
+                            8-800-700-09-34
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="mobile-menu__search">
+                <form action="#" class="mobile-menu__search-form">
+                    <input type="text" placeholder="Поиск" class="mobile-menu__search-input">
+                    <div class="mobile-menu__search-buttons">
+                        <button type="reset" class="mobile-menu__search-button">
+                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.48535 2L18.4559 18.9706M18.4561 2L1.48549 18.9706" stroke="black"
+                                    stroke-width="2.5" stroke-linecap="round" />
+                            </svg>
+                        </button>
+                        <button type="submit" class="mobile-menu__search-button">
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.8882 16.3076L23.5806 24" stroke="black" stroke-width="2.5" />
+                                <path
+                                    d="M18.6221 9.93605C18.6221 14.7332 14.7332 18.6221 9.93605 18.6221C5.13888 18.6221 1.25 14.7332 1.25 9.93605C1.25 5.13888 5.13888 1.25 9.93605 1.25C14.7332 1.25 18.6221 5.13888 18.6221 9.93605Z"
+                                    stroke="black" stroke-width="2.5" />
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="modal-news" id="modal-news">
+        <div class="modal-news__body">
+            <div class="modal-news__header">
+                <div class="modal-news__date">Дата публикации: 15.03.2024</div>
+                <a href="#" class="modal-news__close" toggle="#modal-news">
+                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2 2L18.9706 18.9706M18.9707 2L2.00014 18.9706" stroke="black" stroke-width="2.5" stroke-linecap="round"/>
+                    </svg>                        
+                </a>
+            </div>
+            <div class="modal-news__scroll">
+                <div class="modal-news__content">
+                    <h2 class="title modal-news__title modal-news__title_h2">H2</h2>
+                    <p class="modal-news__bigtext">
+                        Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.
+                    </p>
+                    <div class="modal-news__line"></div>
+                    <h3 class="modal-news__title modal-news__title_h3">H3</h3>
+                    <p class="modal-news__text">
+                        Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" 
+                        для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и 
+                        форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений 
+                        пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с 
+                        образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в 
+                        шаблонах которых используется Lorem Ipsum.
+                        <br>
+                        <br>
+                        Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" 
+                        для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и 
+                        форм шрифтов, используя Lorem Ipsum для распечатки образцов. 
+                    </p>
+                    <div class="modal-news__slider">
+                        <div class="swiper modal-news__swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="modal-news__slide">
+                                        <img src="./img/news-modal/slide-1.png" alt="image">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="modal-news__slide">
+                                        <img src="./img/news-modal/slide-1.png" alt="image">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="good__buttons modal-news__buttons">
+                            <button class="good__arrow prev" data-button="modal-news-prev">
+                                <svg width="19" height="32" viewBox="0 0 19 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.1421 1.85786L3 16L17.1421 30.1421" stroke="#79BA2A" stroke-width="3" />
+                                </svg>
+                            </button>
+                            <button class="good__arrow next" data-button="modal-news-next">
+                                <svg width="19" height="32" viewBox="0 0 19 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.85786 1.85786L16 16L1.85786 30.1421" stroke="#79BA2A" stroke-width="3" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <h4 class="modal-news__title modal-news__title_h4">H4</h4>
+                    <div class="modal-news__lists">
+                        <ul class="modal-news__list">
+                            <li class="modal-news__list-item p modal-news__list-text">— Lorem Ipsum - это текст-"рыба"</li>
+                            <li class="modal-news__list-item p modal-news__list-text">— Lorem Ipsum - это текст-"рыба"</li>
+                            <li class="modal-news__list-item p modal-news__list-text">— Lorem Ipsum - это текст-"рыба"</li>
+                            <li class="modal-news__list-item p modal-news__list-text">— Lorem Ipsum - это текст-"рыба"</li>
+                            <li class="modal-news__list-item p modal-news__list-text">— Lorem Ipsum - это текст-"рыба"</li>
+                        </ul>
+                        <ul class="modal-news__list">
+                            <li class="modal-news__list-item p modal-news__list-text">1. Lorem Ipsum - это текст-"рыба"</li>
+                            <li class="modal-news__list-item p modal-news__list-text">2. Lorem Ipsum - это текст-"рыба"</li>
+                            <li class="modal-news__list-item p modal-news__list-text">3. Lorem Ipsum - это текст-"рыба"</li>
+                            <li class="modal-news__list-item p modal-news__list-text">4. Lorem Ipsum - это текст-"рыба"</li>
+                            <li class="modal-news__list-item p modal-news__list-text">5. Lorem Ipsum - это текст-"рыба"</li>
+                        </ul>
+                    </div>
+                    <h5 class="modal-news__title modal-news__title_h5">H5</h5>
+                    <div class="modal-news__mb">
+                        <p class="modal-news__text">
+                            Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" 
+                            для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и 
+                            форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений 
+                            пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с 
+                            образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в 
+                            шаблонах которых используется Lorem Ipsum.
+                            <br>
+                            <br>
+                            Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" 
+                            для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и 
+                            форм шрифтов, используя Lorem Ipsum для распечатки образцов. 
+                        </p>
+                    </div>
+                    <p class="modal-news__smalltext">
+                        Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.
+                    </p>
+                    <div class="modal-news__line"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script/inputmask.min.js"></script>
+    <script src="./script/swiper-bundle.min.js"></script>
+    <script src="./script/script.js"></script>
+</body>
+
+</html>

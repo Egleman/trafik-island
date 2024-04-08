@@ -52,6 +52,12 @@
             color: rgb(246, 144, 0);
         }
     }
+    .instructions__tabs-tab {
+        &:hover {
+            color: rgb(121, 186, 42);
+            background: rgb(255, 255, 255);
+        }
+    }
 }
 
 @media (hover: none) {
@@ -106,6 +112,12 @@
         &:active {
             background: #fff;
             color: rgb(246, 144, 0);
+        }
+    }
+    .instructions__tabs-tab {
+        &:active {
+            color: rgb(121, 186, 42);
+            background: rgb(255, 255, 255);
         }
     }
 }

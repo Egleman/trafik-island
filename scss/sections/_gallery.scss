@@ -4,7 +4,7 @@
     overflow: hidden;
     &__container {
         display: grid;
-        grid-template-columns: minmax(15px, 1fr) minmax(200px, 1360px) minmax(15px, 1fr);
+        grid-template-columns: minmax(5px, 1fr) minmax(200px, 1360px) minmax(5px, 1fr);
     }
     &__slide {
         height: 750px;

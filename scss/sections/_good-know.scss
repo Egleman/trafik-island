@@ -1,0 +1,30 @@
+.good-know {
+    padding: 152px 0 281px 0;
+    position: relative;
+    background: linear-gradient(rgba(45, 45, 45, 0.7), rgba(45, 45, 45, 0.6)), url(../img/connect/background.png) center/cover no-repeat;
+    overflow: hidden;
+    &__title {
+        color: #fff;
+        br {
+            display: none;
+        }
+    }
+}
+@media (max-width: 1022px) {
+    .good-know {
+        padding: 146px 0 252px 0;
+    }
+}
+@media (max-width: 606px) {
+    .good-know {
+        padding: 90px 0 125px 0;
+        &__title {
+            br {
+                display: block;
+            }
+        }
+        &_news {
+            padding: 50px 0 175px 0;
+        }
+    }
+}
