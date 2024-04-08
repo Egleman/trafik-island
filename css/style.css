@@ -3013,12 +3013,18 @@ body::-webkit-scrollbar-thumb {
     margin-bottom: 40px;
   }
 }
+.articles {
+  padding-bottom: 82px;
+}
 .articles__grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
+  -webkit-transform: translateY(-157px);
+      -ms-transform: translateY(-157px);
+          transform: translateY(-157px);
 }
-.articles__pagintaion {
+.articles__pagination {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3028,8 +3034,11 @@ body::-webkit-scrollbar-thumb {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-transform: translateY(-40px);
+      -ms-transform: translateY(-40px);
+          transform: translateY(-40px);
 }
-.articles__pagintaion-text {
+.articles__pagination-counter {
   color: rgba(255, 255, 255, 0.8);
   font-size: 11px;
   font-weight: 400;
@@ -3067,8 +3076,51 @@ body::-webkit-scrollbar-thumb {
   letter-spacing: 3%;
   text-align: center;
   text-transform: uppercase;
+  background: transparent;
+  border-radius: 100%;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+.articles__list-link_icon {
+  padding-left: 3px;
+}
+.articles__list-link.active {
+  background: #fff;
+  color: rgb(121, 186, 42);
+}
+.articles .card__text {
+  margin-bottom: 40px;
 }
 
+@media (max-width: 1390px) {
+  .articles__wrapper {
+    padding: 0 40px;
+  }
+}
+@media (max-width: 1022px) {
+  .articles__wrapper {
+    padding: 0 27.5px;
+  }
+  .articles__pagination {
+    -webkit-transform: translateY(-60px);
+        -ms-transform: translateY(-60px);
+            transform: translateY(-60px);
+  }
+  .articles .card {
+    padding: 20px;
+  }
+  .articles .card__image {
+    height: 240px;
+  }
+  .articles .card__text {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 606px) {
+  .articles__grid {
+    grid-template-columns: 1fr;
+  }
+}
 .search {
   position: fixed;
   top: 0;
@@ -3607,6 +3659,10 @@ body::-webkit-scrollbar-thumb {
     color: rgb(121, 186, 42);
     background: rgb(255, 255, 255);
   }
+  .articles__list-link:hover {
+    background: #fff;
+    color: rgb(121, 186, 42);
+  }
 }
 @media (hover: none) {
   .header__list-link:active::after {
@@ -3645,5 +3701,9 @@ body::-webkit-scrollbar-thumb {
   .instructions__tabs-tab:active {
     color: rgb(121, 186, 42);
     background: rgb(255, 255, 255);
+  }
+  .articles__list-link:active {
+    background: #fff;
+    color: rgb(121, 186, 42);
   }
 }/*# sourceMappingURL=style.css.map */

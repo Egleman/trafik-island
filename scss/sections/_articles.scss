@@ -1,14 +1,17 @@
 .articles {
+    padding-bottom: 82px;
     &__grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
+        transform: translateY(-157px);
     }
-    &__pagintaion {
+    &__pagination {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        &-text {
+        transform: translateY(-40px);
+        &-counter {
             color: rgba(255, 255, 255, .8);
             font-size: 11px;
             font-weight: 400;
@@ -36,6 +39,54 @@
             letter-spacing: 3%;
             text-align: center;
             text-transform: uppercase;
+            background: transparent;
+            border-radius: 100%;
+            transition: .3s all;
+            &_icon {
+                padding-left: 3px;
+            }
+        }
+        &-link.active {
+            background: #fff;
+            color: rgb(121, 186, 42); 
+        }
+    }
+    .card {
+        &__text {
+            margin-bottom: 40px;
+        }
+    }
+}
+@media (max-width: 1390px) {
+    .articles {
+        &__wrapper {
+            padding: 0 40px;
+        }
+    }
+}
+@media (max-width: 1022px) {
+    .articles {
+        &__wrapper {
+            padding: 0 27.5px;
+        }
+        &__pagination {
+            transform: translateY(-60px);
+        }
+        .card {
+            padding: 20px;
+            &__image {
+                height: 240px;
+            }
+            &__text {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+@media (max-width: 606px) {
+    .articles {
+        &__grid {
+            grid-template-columns: 1fr;
         }
     }
 }

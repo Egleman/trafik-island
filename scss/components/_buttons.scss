@@ -58,6 +58,12 @@
             background: rgb(255, 255, 255);
         }
     }
+    .articles__list-link {
+        &:hover {
+            background: #fff;
+            color: rgb(121, 186, 42);  
+        }
+    }
 }
 
 @media (hover: none) {
@@ -118,6 +124,12 @@
         &:active {
             color: rgb(121, 186, 42);
             background: rgb(255, 255, 255);
+        }
+    }
+    .articles__list-link {
+        &:active {
+            background: #fff;
+            color: rgb(121, 186, 42);  
         }
     }
 }
