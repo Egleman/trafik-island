@@ -397,8 +397,33 @@ if (videos) {
 
     })
 }
-
-// const instuctionsPageAccordions = document.querySelectorAll('.instructions__accordion-header');
-// if (instuctionsPageAccordions) {
-
-// }
+const formInputs = document.querySelectorAll('[data-input="requried"]');
+formInputs.forEach(inp => {
+    inp.addEventListener('focus', () => {
+        if (inp.classList.contains('error')) {
+            inp.classList.remove('error')
+        }
+    })
+})
+const contactsForm = document.querySelector('.contacts__form');
+if (contactsForm) {
+    contactsForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const formData = new FormData(contactsForm);
+        const formBody = {};
+        for (const pair of formData.entries()) {
+            formBody[pair[0]] = pair[1]
+        }
+        formBody.file = '1';
+        if (Object.values(formBody).every(item => item !== '')) {
+            console.log('Отправлено')
+            contactsForm.reset();
+        } else {
+            Object.values(formBody).forEach((item, index) => {
+                if (item === '') {
+                    formInputs[index].classList.add('error');
+                }
+            })
+        }
+    })
+}

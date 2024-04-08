@@ -41,17 +41,6 @@ b {
     font-weight: 700;
 }
 
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background-color: darkgrey;
-}
-
-::-webkit-scrollbar-thumb {
-    background: rgb(246, 144, 0);
-}
 
 body::-webkit-scrollbar {
     width: 6px;               /* ширина всей полосы прокрутки */

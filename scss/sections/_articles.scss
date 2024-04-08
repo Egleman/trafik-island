@@ -83,10 +83,44 @@
         }
     }
 }
+@media (max-width: 715px) {
+    .articles {
+        &__list {
+            &-item.disable {
+                display: none;
+            }
+        }
+    }
+}
 @media (max-width: 606px) {
     .articles {
         &__grid {
             grid-template-columns: 1fr;
+            transform: translateY(-110px);
+        }
+        &__list {
+            gap: 15px;
+        }
+        &__pagination {
+            transform: translateY(-40px);
+            flex-direction: column;
+            gap: 50px;
+            align-items: center;
+            &-counter {
+                font-size: 14px;
+            }
+        }
+    }
+}
+@media (max-width: 400px) {
+    .articles {
+        .card {
+            &__image {
+                height: 200px;
+            }
+        }
+        &__list {
+            gap: 10px;
         }
     }
 }
