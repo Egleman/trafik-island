@@ -2741,7 +2741,7 @@ q {
   align-items: center;
   justify-content: center;
 }
-.contacts__form-label p {
+.contacts__form-label .main {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2758,7 +2758,7 @@ q {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.contacts__form-label p span {
+.contacts__form-label .main .plus {
   color: rgb(246, 144, 0);
   font-size: 50px;
   line-height: 50px;

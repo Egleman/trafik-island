@@ -541,7 +541,7 @@ if (contactsMiddleList) {
 
 const inputFile = document.querySelector('.file-input');
 if (inputFile) {
-    const fileLabel = document.querySelector('.contacts__form-label > p');
+    const fileLabel = document.querySelector('.contacts__form-label > .main');
     inputFile.addEventListener('change', (e) => {
         fileLabel.style.display = 'block';
         fileLabel.textContent = e.target.files[0].name;
