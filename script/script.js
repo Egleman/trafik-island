@@ -138,6 +138,10 @@ const header = () => {
     mobileMenu.addEventListener('click', (e) => {
         if (!e.target.closest('.mobile-menu__body')) {
             closeActions(mobileMenu);
+            mobileMenuWrapper.style.display = 'flex';
+            mobileMenuSearch.classList.remove('active');
+            closeMenuBtn.style.display = 'flex';
+            backSearchBtn.style.display = 'none';
         }
     })
 
