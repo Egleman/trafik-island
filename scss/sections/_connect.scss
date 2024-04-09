@@ -17,6 +17,17 @@
         text-align: left;
         max-width: 1033px;
         width: 100%;
+        q::before {
+            content: open-quote;
+        }
+          
+        q::after {
+            content: close-quote;
+        }
+          
+        q {
+            quotes: "«" "»";
+        }
     }
 }
 @media (max-width: 1390px) {

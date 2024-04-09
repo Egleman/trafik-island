@@ -83,6 +83,17 @@
         }
     }
 }
+@media (max-width: 800px) {
+    .articles {
+        &__grid {
+            grid-template-columns: 1fr;
+            transform: translateY(-110px);
+            max-width: 415px;
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+}
 @media (max-width: 715px) {
     .articles {
         &__list {

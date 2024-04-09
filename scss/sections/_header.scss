@@ -287,6 +287,13 @@
         }
     }
 }
+@media (max-width: 606px) {
+    .header {
+        .container {
+            padding: 0 15px;
+        }
+    }
+}
 @media (max-width: 540px) {
     .header {
         &__nav {

@@ -4,6 +4,7 @@
 .instructions {
     padding: 45px 0 150px 0;
     overflow: hidden;
+    transform: translateY(-2px);
     &__tabs {
         display: flex;
         gap: 20px;

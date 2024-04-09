@@ -1,5 +1,4 @@
 .select {
-    padding: 19px 24px;
     background: #fff;
     position: relative;
     border-radius: 20px;
@@ -9,6 +8,7 @@
         justify-content: space-between;
         gap: 20px;
         cursor: pointer;
+        padding: 19px 24px;
         &-text {
             color: rgb(0, 0, 0);
             font-size: 18px;

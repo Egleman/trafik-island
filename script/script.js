@@ -35,13 +35,6 @@ scrollLinks.forEach(link => {
         });
     })
 })
-// let modalNewsSlider = new Swiper('.modal-news__swiper', {
-//     slidesPerView: 1,
-//     navigation: {
-//         nextEl: '[data-button="modal-news-next"]',
-//         prevEl: '[data-button="modal-news-prev"]',
-//     },
-// });
 
 let modalNewsSlider;
 const initModalSwiper = (id) => {
@@ -119,6 +112,7 @@ const header = () => {
         if (modal.classList.contains('active')) {
             modal.classList.remove('active');
             modal.classList.add('close');
+            unBlockBody();
             setTimeout(() => {
                 if (modal.classList.contains('close')) {
                     modal.classList.remove('close')
@@ -135,6 +129,7 @@ const header = () => {
 
     headerBurgerBtn.addEventListener('click', () => {
         mobileMenu.classList.add('active');
+        blockBody();
     })
 
     closeMenuBtn.addEventListener('click', () => {
@@ -143,6 +138,19 @@ const header = () => {
     mobileMenu.addEventListener('click', (e) => {
         if (!e.target.closest('.mobile-menu__body')) {
             closeActions(mobileMenu);
+        }
+    })
+
+    window.addEventListener('resize', () => {
+        if (window.innerWidth < 540) {
+            closeActions(searchModal);
+        }
+        if (window.innerWidth > 1200) {
+            closeActions(mobileMenu);
+            mobileMenuWrapper.style.display = 'flex';
+            mobileMenuSearch.classList.remove('active');
+            closeMenuBtn.style.display = 'flex';
+            backSearchBtn.style.display = 'none';
         }
     })
 
@@ -298,6 +306,7 @@ if (select) {
         }
     })
 }
+
 let videoIndex = 0
 class Accordion {
     constructor(target, config) {
