@@ -37,10 +37,19 @@
         &-text {
             color: rgb(0, 0, 0);
             font-size: 16px;
-
             line-height: 142%;
-            
             text-align: left;
+            q::before {
+                content: open-quote;
+            }
+              
+            q::after {
+                content: close-quote;
+            }
+              
+            q {
+                quotes: "«" "»";
+            }
         }
     }
 }
