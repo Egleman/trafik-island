@@ -17,9 +17,8 @@
     }
     &__description {
         font-size: 11px;
-        font-weight: 400;
         line-height: 142%;
-        letter-spacing: 3%;
+        
         text-align: left;
         margin-bottom: 18px;
     }
@@ -50,9 +49,8 @@
     &__copyright {
         color: rgba(0, 0, 0, .6);
         font-size: 11px;
-        font-weight: 400;
         line-height: 142%;
-        letter-spacing: 3%;
+        
         text-align: left;
         margin-bottom: 33px;
         &_mobile {
@@ -69,9 +67,8 @@
         &-text {
             color: rgba(0, 0, 0, .6);
             font-size: 11px;
-            font-weight: 400;
             line-height: 142%;
-            letter-spacing: 3%;
+            
             text-align: left; 
         }
         &-image {
@@ -94,7 +91,7 @@
             font-size: 13px;
             font-weight: 700;
             line-height: 15px;
-            letter-spacing: 3%;
+            
             text-align: left;
             text-transform: uppercase;
             transition: .3s all;
@@ -123,6 +120,7 @@
         &-link {
             display: flex;
             align-items: center;
+            transition: .3s all;
             svg {
                 display: flex;
                 flex-shrink: 0;
@@ -133,7 +131,7 @@
             font-size: 20px;
             font-weight: 700;
             line-height: 23px;
-            letter-spacing: 3%;
+            
             text-align: center;
             text-transform: uppercase;
         }
@@ -144,9 +142,8 @@
         gap: 11px;
         &-text {
             font-size: 11px;
-            font-weight: 400;
             line-height: 142%;
-            letter-spacing: 3%;
+            
             text-align: left;
         }
         &-list {
@@ -184,9 +181,8 @@
         &__description {
             color: rgb(0, 0, 0);
             font-size: 12px;
-            font-weight: 400;
             line-height: 122%;
-            letter-spacing: 3%;
+            
             text-align: left;
             max-width: 253px;
             width: 100%;

@@ -54,5 +54,7 @@ body::-webkit-scrollbar-thumb {
     background: rgb(246, 144, 0);    /* цвет бегунка */
     border-radius: 20px;       /* округлось бегунка */
 }
-
+.white {
+    background: #fff
+}
 @import './imports';

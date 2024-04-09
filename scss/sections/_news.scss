@@ -51,6 +51,27 @@
         &__title {
             margin-bottom: 47px;
         }
-        
+        &__swiper {
+            .swiper-slide {
+                width: max-content;
+            }
+        }
+        &__slide {
+            width: 315px;
+        }
+    }
+}
+@media (max-width: 375px) {
+    .news {
+        &__slide {
+            width: 280px;
+        }
+    }
+}
+@media (max-width: 345px) {
+    .news {
+        &__slide {
+            width: 260px;
+        }
     }
 }

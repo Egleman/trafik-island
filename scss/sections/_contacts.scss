@@ -19,7 +19,7 @@
         font-size: 26px;
         font-weight: 700;
         line-height: 142%;
-        letter-spacing: 3%;
+        
         text-align: left;
     }
     &__list {
@@ -34,12 +34,17 @@
             font-size: 48px;
             font-weight: 700;
             line-height: 142%;
-            letter-spacing: 0%;
+            
             text-align: left;
             white-space: nowrap;
+            transition: .3s all;
             svg {
                 display: flex;
                 flex-shrink: 0;
+                transition: .3s all;
+                path {
+                    transition: .3s all;
+                }
             }
         }
     }
@@ -76,7 +81,7 @@
             color: rgb(121, 186, 42);
             font-size: 18px;
             font-weight: 700;
-            letter-spacing: 3%;
+            
             text-align: center;
             text-transform: uppercase;
             display: flex;
@@ -94,10 +99,13 @@
             font-size: 14px;
             font-weight: 500;
             line-height: 200%;
-            letter-spacing: 3%;
+            
             text-align: right;
             a {
                 color: #F69000;
+                &:hover {
+                    text-decoration: underline;
+                }
             }
         }
     }
@@ -120,17 +128,15 @@
             color: rgb(0, 0, 0);
             font-family: "Roboto", sans-serif;
             font-size: 20px;
-            font-weight: 400;
             line-height: 58px;
-            letter-spacing: 3%;
+            
             text-align: center;
             &::placeholder {
                 color: rgb(0, 0, 0);
                 font-family: "Roboto", sans-serif;
                 font-size: 20px;
-                font-weight: 400;
                 line-height: 58px;
-                letter-spacing: 3%;
+                
                 text-align: center;
             }
             &_hidden {
@@ -152,22 +158,32 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            color: rgb(246, 144, 0);
-            font-size: 18px;
-            line-height: 18px;
-            font-weight: 700;
-            letter-spacing: 3%;
-            text-align: center;
-            text-transform: uppercase;
-            gap: 15px;
-            span {
+            p {
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 color: rgb(246, 144, 0);
-                font-size: 50px;
-                line-height: 50px;
-                font-weight: 300;
-                letter-spacing: 3%;
+                font-size: 18px;
+                line-height: 18px;
+                font-weight: 700;
+                
                 text-align: center;
                 text-transform: uppercase;
+                gap: 15px;
+                max-width: 218px;
+                width: 100%;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                span {
+                    color: rgb(246, 144, 0);
+                    font-size: 50px;
+                    line-height: 50px;
+                    font-weight: 300;
+                    
+                    text-align: center;
+                    text-transform: uppercase;
+                }
             }
         }
         &-button {
@@ -177,12 +193,12 @@
             align-items: center;
             justify-content: center;
             padding: 0;
-            border: none;
+            border: 1px solid transparent;
             color: rgb(255, 255, 255);
             font-family: "Roboto", sans-serif;
             font-size: 18px;
             font-weight: 700;
-            letter-spacing: 3%;
+            
             text-align: center;
             text-transform: uppercase;
             transition: .3s all;
@@ -222,9 +238,8 @@
             p {
                 color: rgb(255, 255, 255);
                 font-size: 11px;
-                font-weight: 400;
                 line-height: 142%;
-                letter-spacing: 3%;
+                
                 text-align: left; 
             }
         }
@@ -258,7 +273,7 @@
                     font-size: 22px;
                     font-weight: 700;
                     line-height: 26px;
-                    letter-spacing: 3%;
+                    
                     text-align: left;
                 }
                 .count {
@@ -266,7 +281,7 @@
                     font-size: 22px;
                     font-weight: 700;
                     line-height: 26px;
-                    letter-spacing: 3%;
+                    
                     text-align: left;
                     margin-left: auto;
                 }
@@ -347,7 +362,7 @@
             font-size: 18px;
             font-weight: 700;
             line-height: 142%;
-            letter-spacing: 3%;
+            
             text-align: left;
         }
         &__top {
@@ -409,6 +424,20 @@
             &-checks {
                 padding-left: 50px;
                 gap: 120px;
+            }
+            &-block {
+                label {
+                    .name {
+                        font-size: 16px;
+                        font-weight: 500;
+                        line-height: 19px;
+                    }
+                    .count {
+                        font-size: 16px;
+                        font-weight: 700;
+                        line-height: 19px;
+                    }
+                }
             }
         }
         &__map {
@@ -484,7 +513,6 @@
         }
     }
 }
-
 @media (max-width: 606px) {
     .contacts {
         padding: 60px 0 0 0;
@@ -529,10 +557,15 @@
             &-label {
                 height: 55px;
                 border-radius: 17px;
-                font-size: 16px;
-                span {
-                    font-size: 36px;
-                    line-height: 36px;
+                
+                p {
+                    font-size: 16px;
+                    max-width: 191px;
+                    width: 100%;
+                    span {
+                        font-size: 36px;
+                        line-height: 36px;
+                    }
                 }
             }
             &-button {

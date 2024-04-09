@@ -2,6 +2,7 @@
     padding: 75px 0 100px 0;
     background: #79BA2A;
     overflow: hidden;
+    transform: translateY(-1px);
     &__wrapper {
         display: flex;
         align-items: center;
@@ -19,9 +20,9 @@
     &__text {
         color: #fff;
         font-size: 20px;
-        font-weight: 400;
+
         line-height: 148%;
-        letter-spacing: 0%;
+        
         text-align: left;
     }
     &__button {
@@ -33,7 +34,7 @@
         color: rgb(121, 186, 42);
         font-size: 18px;
         font-weight: 700;
-        letter-spacing: 3%;
+        
         text-align: center;
         text-transform: uppercase;
         transition: .3s all;
@@ -74,7 +75,7 @@
                 font-size: 22px;
                 font-weight: 700;
                 line-height: 26px;
-                letter-spacing: 3%;
+                
                 text-align: left;
                 display: -webkit-box;
                 -webkit-line-clamp: 3; // количество строк
@@ -86,6 +87,7 @@
             border-radius: 14px;
             background: rgb(246, 144, 0);
             color: rgb(255, 255, 255);
+            border: 1px solid transparent;
             font-size: 13px;
             font-weight: 700;
             line-height: 15px;
@@ -125,6 +127,9 @@
         padding: 0;
         border-radius: 100%;
         visibility: visible;
+        transition: .3s all;
+        border: 1px solid transparent;
+        box-sizing: border-box;
     }
     &__arrow.prev{
         padding-right: 3px;
@@ -152,7 +157,7 @@
         }
         &__text {
             font-size: 17px;
-            font-weight: 400;
+        
             line-height: 148%;
         }
         &__wrapper {
@@ -174,7 +179,7 @@
                     font-size: 20px;
                     font-weight: 700;
                     line-height: 23px;
-                    letter-spacing: 1%;
+                    
                 }
             }
         }

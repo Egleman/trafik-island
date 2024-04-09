@@ -69,9 +69,9 @@
             color: rgb(0, 0, 0);
             font-family: "Roboto", sans-serif;
             font-size: 17px;
-            font-weight: 400;
+            
             line-height: 24px;
-            letter-spacing: 0%;
+            
             text-align: left;
             width: 100%;
             border: none;
@@ -80,9 +80,9 @@
                 color: rgb(0, 0, 0);
                 font-family: "Roboto", sans-serif;
                 font-size: 17px;
-                font-weight: 400;
+                
                 line-height: 20px;
-                letter-spacing: 0%;
+                
                 text-align: left; 
             }
         }
@@ -118,7 +118,7 @@
     background: rgba(0, 0, 0, 0.4);
     z-index: 16;
     opacity: 1;
-    padding: 100px 148px 0 148px;
+    padding: 100px 30px 0 30px;
     transition: .6s all;
     display: none;
     &__body {
@@ -139,43 +139,43 @@
         /* Body text 3 */
         color: rgb(130, 129, 130);
         font-size: 16px;
-        font-weight: 400;
+        
         line-height: 142%;
-        letter-spacing: 0%;
+        
         text-align: left;
     }
-    &__content {
-        padding: 0 130px 90px 65px;
-    }
+    // &__content {
+    //     padding: 0 130px 90px 65px;
+    // }
     &__title {
         margin-bottom: 25px;
         &_h3 {
             font-size: 32px;
             font-weight: 700;
             line-height: 38px;
-            letter-spacing: 3%;
+            
             text-align: left;
         }
         &_h4 {
             font-size: 26px;
             font-weight: 700;
             line-height: 30px;
-            letter-spacing: 3%;
+            
             text-align: left;
         }
         &_h5 {
             font-size: 22px;
             font-weight: 700;
             line-height: 26px;
-            letter-spacing: 3%;
+            
             text-align: left;
         }
     }
     &__bigtext {
         font-size: 24px;
-        font-weight: 400;
+        
         line-height: 142%;
-        letter-spacing: 3%;
+        
         text-align: left;
     }
     &__line {
@@ -186,9 +186,9 @@
     }
     &__text {
         font-size: 16px;
-        font-weight: 400;
+        
         line-height: 142%;
-        letter-spacing: 0%;
+        
         text-align: left;
     }
     &__slider {
@@ -203,10 +203,14 @@
         transform: translate(-50%, -50%);
         left: 50%;
         width: calc(100% + 80px);
+        button {
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        }
     }
     &__scroll {
         height: 100%;
         overflow: auto;
+        padding: 0 130px 90px 65px;
         &::-webkit-scrollbar {
             width: 6px;               /* ширина всей полосы прокрутки */
           }
@@ -239,17 +243,17 @@
         gap: 15px;
         &-text {
             font-size: 16px;
-            font-weight: 400;
+            
             line-height: 142%;
-            letter-spacing: 0%;
+            
             text-align: left;
         }
     }
     &__smalltext {
         font-size: 14px;
-        font-weight: 400;
+        
         line-height: 142%;
-        letter-spacing: 3%;
+        
         text-align: left;
     }
     &__mb {
@@ -300,7 +304,7 @@
 }
 @media (max-width: 1022px) {
     .modal-news {
-        padding: 80px 115px 0 115px;
+        padding: 80px 30px 0 30px;
         &__body {
             max-width: 730px;
             padding: 30px 30px 0 30px;
@@ -308,7 +312,7 @@
         &__header {
             margin-bottom: 30px;
         }
-        &__content {
+        &__scroll {
             padding: 0 60px 0 30px;
         }
         &__line {
@@ -322,9 +326,9 @@
         }
         &__smalltext {
             font-size: 12px;
-            font-weight: 400;
+            
             line-height: 142%;
-            letter-spacing: 3%;
+            
             text-align: left;
         }
     }
@@ -338,19 +342,19 @@
         }
         &__bigtext {
             font-size: 18px;
-            font-weight: 400;
+            
             line-height: 142%;
-            letter-spacing: 3%;
+            
             text-align: left;
         }
         &__text {
             font-size: 15px;
-            font-weight: 400;
+            
             line-height: 160%;
-            letter-spacing: 0%;
+            
             text-align: left;
         }
-        &__content {
+        &__scroll {
             padding: 0 20px 0 0;
         }
         &__buttons {

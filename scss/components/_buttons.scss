@@ -38,24 +38,33 @@
         &:hover {
             background: #fff;
             color: rgb(246, 144, 0);
+            border: 1px solid rgb(246, 144, 0);
         }
     }
     .card__button {
         &:hover {
             background: #fff;
             color: rgb(246, 144, 0);
+            border: 1px solid rgb(246, 144, 0);
         }
     }
     .variable__block-link {
         &:hover {
             background: #fff;
             color: rgb(246, 144, 0);
+            border: 1px solid rgb(246, 144, 0);
         }
     }
     .instructions__tabs-tab {
         &:hover {
             color: rgb(121, 186, 42);
             background: rgb(255, 255, 255);
+        }
+    }
+    .instructions-reserve__tabs-tab {
+        &:hover {
+            color: #fff;
+            background: rgb(121, 186, 42);
         }
     }
     .articles__list-link {
@@ -68,12 +77,38 @@
         &:hover  {
             background: #fff;
             color: rgb(246, 144, 0);
+            border: 1px solid rgb(246, 144, 0);
         }
     }
     .contacts__middle-link {
         &:hover {
             color: #fff;
             background: rgb(121, 186, 42);
+        }
+    }
+    .header__contacts-link {
+        &:hover {
+            color: rgb(246, 144, 0);
+        }
+    }
+    .footer__contacts-link {
+        &:hover {
+            color: rgb(246, 144, 0);
+        }
+    }
+    .contacts__list-link {
+        &:hover {
+            color: rgb(246, 144, 0);
+            svg {
+                path {
+                    fill: rgb(246, 144, 0);
+                }
+            }
+        }
+    }
+    .good__arrow {
+        &:hover {
+            border: 1px solid rgb(246, 144, 0);
         }
     }
 }
@@ -118,24 +153,33 @@
         &:active {
             background: #fff;
             color: rgb(246, 144, 0);
+            border: 1px solid rgb(246, 144, 0);
         }
     }
     .card__button {
         &:active {
             background: #fff;
             color: rgb(246, 144, 0);
+            border: 1px solid rgb(246, 144, 0);
         }
     }
     .variable__block-link {
         &:active {
             background: #fff;
             color: rgb(246, 144, 0);
+            border: 1px solid rgb(246, 144, 0);
         }
     }
     .instructions__tabs-tab {
         &:active {
             color: rgb(121, 186, 42);
             background: rgb(255, 255, 255);
+        }
+    }
+    .instructions-reserve__tabs-tab {
+        &:active {
+            color: #fff;
+            background: rgb(121, 186, 42);
         }
     }
     .articles__list-link {
@@ -148,6 +192,32 @@
         &:active  {
             background: #fff;
             color: rgb(246, 144, 0);
+            border: 1px solid rgb(246, 144, 0);
+        }
+    }
+    .header__contacts-link {
+        &:active {
+            color: rgb(246, 144, 0);
+        }
+    }
+    .footer__contacts-link {
+        &:active {
+            color: rgb(246, 144, 0);
+        }
+    }
+    .contacts__list-link {
+        &:active {
+            color: rgb(246, 144, 0);
+            svg {
+                path {
+                    fill: rgb(246, 144, 0);
+                }
+            }
+        }
+    }
+    .good__arrow {
+        &:active {
+            border: 1px solid rgb(246, 144, 0);
         }
     }
 }

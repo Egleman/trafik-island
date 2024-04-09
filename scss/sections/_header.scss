@@ -44,19 +44,20 @@
         &-link {
             display: flex;
             align-items: center;
+            gap: 16px;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 23px;
+            
+            text-align: center;
+            text-transform: uppercase;
+            transition: .3s all;
             svg {
                 display: flex;
                 flex-shrink: 0;
                 width: 24px;
                 height: 24px;
             }
-            gap: 16px;
-            font-size: 20px;
-            font-weight: 700;
-            line-height: 23px;
-            letter-spacing: 3%;
-            text-align: center;
-            text-transform: uppercase;
         }
     }
     &__list {
@@ -67,7 +68,7 @@
             font-size: 14px;
             font-weight: 700;
             line-height: 16px;
-            letter-spacing: 3%;
+            
             text-align: center;
             text-transform: uppercase;
             transition: .3s all;
@@ -119,7 +120,7 @@
         font-size: 16px;
         font-weight: 700;
         line-height: 19px;
-        letter-spacing: 3%;
+        
         text-align: center;
         text-transform: uppercase;
         border-radius: 14px;
@@ -158,9 +159,8 @@
             color: rgb(0, 0, 0);
             font-family: "Roboto", sans-serif;
             font-size: 17px;
-            font-weight: 400;
             line-height: 34px;
-            letter-spacing: 0%;
+            
             text-align: left;
             width: 100%;
             border: none;
@@ -169,9 +169,9 @@
                 color: rgb(0, 0, 0);
                 font-family: "Roboto", sans-serif;
                 font-size: 17px;
-                font-weight: 400;
+   
                 line-height: 20px;
-                letter-spacing: 0%;
+                
                 text-align: left; 
             }
         }

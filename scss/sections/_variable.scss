@@ -22,13 +22,14 @@
             font-size: 22px;
             font-weight: 700;
             line-height: 26px;
-            letter-spacing: 3%;
+            
             text-align: left;
         }
         &-link {
             border-radius: 14px;
             background: rgb(246, 144, 0);
             color: rgb(255, 255, 255);
+            border: 1px solid transparent;
             font-size: 13px;
             font-weight: 700;
             line-height: 15px;

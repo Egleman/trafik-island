@@ -1,5 +1,7 @@
 .cppl {
     padding: 100px 0 86px 0;
+    background: #79BA2A;
+    transform: translateY(-1px);
     &__wrapper {
         display: flex;
         justify-content: space-between;
@@ -12,9 +14,8 @@
     &__text {
         color: #fff;
         font-size: 20px;
-        font-weight: 400;
         line-height: 142%;
-        letter-spacing: 3%;
+        
         text-align: left;
         max-width: 845px;
         width: 100%;
