@@ -155,7 +155,7 @@ const header = () => {
             mobileMenuSearch.classList.remove('active');
             closeMenuBtn.style.display = 'flex';
             backSearchBtn.style.display = 'none';
-        }
+        } 
     })
 
 
